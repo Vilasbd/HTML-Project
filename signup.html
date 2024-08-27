@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #007bff; 
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #0056b3; 
+            color: #f4f4f4;
+        }
+        main {
+            padding: 2rem;
+            background-color: #fff;
+            max-width: 600px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff; 
+        }
+        form {
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        form input {
+            width: calc(100% - 1rem);
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 1rem;
+        }
+        form button {
+            background-color: #007bff; 
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+    </nav>
+    <main>
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+    <script>
+        
+        document.getElementById('signup-form')?.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Sign Up is simulated.');
+            
+        });
+    </script>
+</body>
+</html>
